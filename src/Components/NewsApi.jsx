@@ -11,7 +11,7 @@ const NewsApi = ({ items }) => {
     const [searchTitle, setSearchTitle] = useState("react");
     const [pageError, setPageError] = useState(false);
     const postPerPage = 9;
-    const API_KEY = "6355b278cfe8453ca68a29d45b321080";
+    const API_KEY = "YOUR-API-KEY";
 
     useEffect(() => {
         fetch(`https://newsapi.org/v2/everything?q=${searchTitle}&apiKey=${API_KEY}`)
